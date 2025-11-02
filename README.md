@@ -2,8 +2,21 @@
 
 Proyecto de ejemplo: **Flutter** (frontend) + **AWS Lambda (Python)** (backend) usando **DynamoDB**, **S3** y **Rekognition**.
 
+Despues de crear proyecto en ChatGPT aplicar:
+# agregar assets para desplegar como web
 fvm flutter create . --platforms web
+# compilar para web
 fvm flutter build web
+#correr en web
+fvm flutter run -d web-server --web-hostname=0.0.0.0 --web-port=3000
+
+#TODO
+Ver como desplegar log
+Habilitar cuenta AWS
+Habilitar lambda registro
+Habilitar S3 para rostro
+Habilitar Dynamo DB
+Habilitar API Gateway
 
 
 Estructura:
