@@ -14,9 +14,9 @@ class ResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Nombre: \${user['first_name']} \${user['last_name']}', style: const TextStyle(fontSize: 20)),
+              Text("Nombre: \${user['first_name']} \${user['last_name']}", style: const TextStyle(fontSize: 20)),
               const SizedBox(height: 8),
-              Text('Correo: \${user['email']}', style: const TextStyle(fontSize: 16)),
+              Text("Correo: \${user['email']}", style: const TextStyle(fontSize: 16)),
             ],
           ),
         ),
