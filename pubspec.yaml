@@ -1,0 +1,16 @@
+name: flutter_face_verify
+description: Flutter app example for face verification with AWS
+publish_to: 'none'
+version: 0.0.1
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.7+3
+  http: ^0.13.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
