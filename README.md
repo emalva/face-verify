@@ -8,10 +8,10 @@ fvm flutter create . --platforms web
 # compilar para web
 fvm flutter build web
 
-#correr en web
+# correr en web
 fvm flutter run -d web-server --web-hostname=0.0.0.0 --web-port=3000
 
-#TODO
+# TODO
 
 Ver como desplegar log
 Habilitar cuenta AWS
