@@ -16,7 +16,7 @@ fvm flutter run -d web-server --web-hostname=0.0.0.0 --web-port=3000
 
 Habilitar cuenta AWS OK
 
-Habilitar user admin  
+Habilitar user awsadmin OK  
 
 Habilitar lambda registro
 
