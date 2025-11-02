@@ -2,6 +2,7 @@
 
 Proyecto de ejemplo: **Flutter** (frontend) + **AWS Lambda (Python)** (backend) usando **DynamoDB**, **S3** y **Rekognition**.
 
+fvm flutter create . --platforms web
 
 
 Estructura:
