@@ -7,15 +7,15 @@ Despues de crear proyecto en ChatGPT aplicar:
 fvm flutter create . --platforms web
 # compilar para web
 fvm flutter build web
-
 # correr en web
 fvm flutter run -d web-server --web-hostname=0.0.0.0 --web-port=3000
 
 # TODO
 
-Ver como desplegar log
 
-Habilitar cuenta AWS
+Habilitar cuenta AWS OK
+
+Habilitar user awsadmin OK  
 
 Habilitar lambda registro
 
@@ -24,6 +24,16 @@ Habilitar S3 para rostro
 Habilitar Dynamo DB
 
 Habilitar API Gateway
+
+Ver como desplegar log
+
+GIT
+git add .
+
+git commit -m "
+
+git push origin main
+
 
 
 
