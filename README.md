@@ -27,7 +27,19 @@ Habilitar API Gateway
 
 Ver como desplegar log
 
+
+
 GIT
+
+Traer cambios de remoto
+
+git pull origin main
+
+En caso de conflicto 
+
+git pull --no-rebase origin main
+
+Subir cambios a remoto
 git add .
 
 git commit -m "
