@@ -2,6 +2,8 @@
 
 Proyecto de ejemplo: **Flutter** (frontend) + **AWS Lambda (Python)** (backend) usando **DynamoDB**, **S3** y **Rekognition**.
 
+
+
 Estructura:
 - `lib/` : código Flutter (pantallas, servicios, modelos)
 - `backend/` : Lambdas Python (`register_user_lambda.py`, `verify_user_lambda.py`)
