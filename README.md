@@ -10,7 +10,17 @@ fvm flutter build web
 # correr en web
 fvm flutter run -d web-server --web-hostname=0.0.0.0 --web-port=3000
 
-# TODO
+# debuf Flutter web app
+  Open the app in Chrome, then press:
+  Ctrl + Shift + I   (Windows/Linux)
+  Cmd + Option + I   (Mac)
+  Then go to the Console tab.
+  Here you’ll see:
+  Dart print() outputs
+  JavaScript errors
+  Flutter web runtime logs (e.g. "Service worker registered", “CanvasKit loaded”, etc.)
+
+# PASOS
 
 Habilitar cuenta AWS OK
 
@@ -24,15 +34,19 @@ Habilitar tabla Dynamo DB OK
 
 Probar lambda registro con S3 y DynamoDB OK
 
-Habilitar API Gateway
+Habilitar API Gateway OK
 
-Conectar lambda registro con API Gateway
+Conectar lambda registro con API Gateway OK
 
-Probar API Gateway con lambda register 
+Probar API Gateway con lambda register desde Postman OK
+
+Conectar Flutter APP con API Gateway OK
+
+# TODO
+
+DESHABILITAR API GATEWAY DIARIO
 
 Asegurar API Gateway para ser llamado solo desde Flutter con token
-
-Conectar Flutter APP con API Gateway
 
 Habilitar lambda verify
 
@@ -49,8 +63,26 @@ Conectar codigo fuente lambdas con proyecto GitHub
 
 Formatear README de backend 
 
-Ver como desplegar log en Flutter 
+PRUEBAS
 
+json Prueba lambda register
+{
+  "body": "{\"email\": \"demo1@example.com\", \"first_name\": \"Ana\", \"last_name\": \"López\", \"photo\": \"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhIWFRUVFRUVFRUVFRUVFRUXFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAiEAABAwQCAgMBAAAAAAAAAAABAgMRAAQFEiExEyJBQmH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAHhEAAgICAgMAAAAAAAAAAAAAAQIAAwQRITESIkH/2gAMAwEAAhEDEQA/APqigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig//Z\"}"
+}
+
+api gateway
+https://u58yr6zew3.execute-api.us-east-2.amazonaws.com/dev/register
+
+
+probar desde postman
+
+Content-Type application/json
+{
+        "email":"demo3@example.com",
+        "first_name": "Sandra",
+        "last_name": "Cervantes",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhIWFRUVFRUVFRUVFRUVFRUXFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAiEAABAwQCAgMBAAAAAAAAAAABAgMRAAQFEiExEyJBQmH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAHhEAAgICAgMAAAAAAAAAAAAAAQIAAwQRITESIkH/2gAMAwEAAhEDEQA/APqigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig//Z\"}"
+}
 
 
 GIT
