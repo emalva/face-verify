@@ -47,6 +47,8 @@ Probar API Gateway con lambda verify
 
 Conectar codigo fuente lambdas con proyecto GitHub
 
+Formatear README de backend 
+
 Ver como desplegar log en Flutter 
 
 
